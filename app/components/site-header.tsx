@@ -11,7 +11,6 @@ const links = [
   ['/nosotros', siteContent.general.navigation.about],
   ['/servicios', siteContent.general.navigation.services],
   ['/ventas-de-epp', siteContent.general.navigation.epp],
-  ['/casos-de-exito', siteContent.general.navigation.cases],
 ];
 
 export function SiteHeader() {
@@ -48,7 +47,7 @@ export function SiteHeader() {
       <div className="mobile-menu" id="mobile-menu">
         <nav aria-label="Navegación móvil">
           {links.map(([href, label], index) => <Link href={href} onClick={() => setOpenPath(null)} key={href}><small>0{index + 1}</small>{label}<span>↗</span></Link>)}
-          <Link href="/contacto" onClick={() => setOpenPath(null)}><small>06</small>{siteContent.general.navigation.contact}<span>↗</span></Link>
+          <Link href="/contacto" onClick={() => setOpenPath(null)}><small>0{links.length + 1}</small>{siteContent.general.navigation.contact}<span>↗</span></Link>
         </nav>
         <p>{siteContent.general.coverage}</p>
       </div>

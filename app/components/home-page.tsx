@@ -34,7 +34,6 @@ export function HomePage() {
   const { content } = useSiteContent();
   const copy = siteContent.home;
   const featuredServices = content.services.slice(0, 3);
-  const featuredCases = content.cases.slice(0, 2);
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
@@ -96,8 +95,6 @@ export function HomePage() {
       </section>
 
       <section className="regulation-band" data-reveal><div className="regulation-mark"><span className="regulation-number">44</span><p><small>{copy.regulation.kicker}</small><strong>{copy.regulation.title}</strong></p></div><div className="regulation-copy"><span className="regulation-status">{copy.regulation.status}</span><p>{copy.regulation.copy}</p></div><Link href="/contacto">{copy.regulation.cta} <span>↗</span></Link></section>
-
-      <section className="case-preview-section"><div className="case-preview-head"><div><p className="eyebrow dark"><span /> {copy.cases.eyebrow}</p><h2>{copy.cases.title}</h2></div><p>{copy.cases.intro}</p></div><div className="case-preview-grid">{featuredCases.map((item, index) => <Link href="/casos-de-exito" className="home-case" key={item.id}><img src={item.image} alt="" /><div className="home-case-overlay" /><span>0{index + 1} / {item.sector}</span><div><h3>{item.title}</h3><p>{item.metric}</p></div><b>↗</b></Link>)}</div></section>
 
       <section className="home-final-cta"><p className="eyebrow"><span /> {copy.finalCta.eyebrow}</p><h2>{copy.finalCta.title}</h2><Link className="button-primary" href="/contacto">{copy.finalCta.button} <span>→</span></Link></section>
     </main>
