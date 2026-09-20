@@ -9,7 +9,18 @@ const heroVideos = [
 
 export function HeroVideoRotator() {
   const [activeVideo, setActiveVideo] = useState(0);
+  const [preloadSecondaryVideos, setPreloadSecondaryVideos] = useState(false);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
+
+  useEffect(() => {
+    if ('requestIdleCallback' in window) {
+      const idleId = window.requestIdleCallback(() => setPreloadSecondaryVideos(true), { timeout: 2500 });
+      return () => window.cancelIdleCallback(idleId);
+    }
+
+    const timeoutId = globalThis.setTimeout(() => setPreloadSecondaryVideos(true), 2500);
+    return () => globalThis.clearTimeout(timeoutId);
+  }, []);
 
   useEffect(() => {
     videoRefs.current.forEach((video, index) => {
@@ -40,7 +51,7 @@ export function HeroVideoRotator() {
             autoPlay={index === 0}
             muted
             playsInline
-            preload="auto"
+            preload={index === 0 || preloadSecondaryVideos ? 'auto' : 'none'}
             onEnded={index === activeVideo ? showNextVideo : undefined}
           >
             <source src={video.src} type="video/mp4" />
