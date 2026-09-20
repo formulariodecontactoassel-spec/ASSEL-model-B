@@ -78,7 +78,7 @@
     "why": {
       "eyebrow": "Por qué ASSEL",
       "title": "La prevención funciona cuando las personas pueden aplicarla.",
-      "intro": "Convertimos normativa y conocimiento técnico en decisiones claras que jefaturas y equipos pueden aplicar en terreno.",
+      "intro": "Convertimos normativa y conocimiento técnico en decisiones claras, que jefaturas y equipos pueden aplicar en terreno.",
       "imageKicker": "Nuestro enfoque",
       "imageTitle": "Presencia Técnica. Cercanía y Acompañamiento.",
       "attributes": [
@@ -101,7 +101,7 @@
       "kicker": "Gestión preventiva actualizada",
       "title": "DS N.º 44",
       "status": "Normativa vigente",
-      "copy": "Apoyamos a tu empresa a construir una gestión preventiva participativa, documentada y orientada a la mejora continua.",
+      "copy": "Apoyamos a tu empresa a construir una gestión preventiva, participativa, documentada y orientada a la mejora continua.",
       "cta": "Evaluar mi situación"
     },
     "cases": {
@@ -182,9 +182,9 @@
       ]
     },
     "method": {
-      "eyebrow": "04 · Trabajamos con tu empresa",
-      "title": "Nos integramos a ella.",
-      "intro": "Un proceso de mejoramiento continuo que convierte el diagnóstico en acción y la acción en mejora demostrable.",
+      "eyebrow": "04 · Aliados cercanos",
+      "title": "Co-construimos con nuestros clientes.",
+      "intro": "Un proceso de mejoramiento continuo, que convierte el diagnóstico en acción y la acción en mejora demostrable.",
       "steps": [
         {
           "title": "Escuchar",
@@ -207,7 +207,7 @@
     "scale": {
       "eyebrow": "05 · Alcances adaptables",
       "title": "La misma cercanía. Una escala diferente.",
-      "intro": "La solución crece en profundidad y alcance según la complejidad de cada organización.",
+      "intro": "La solución crece en profundidad y alcance, según la complejidad de cada organización.",
       "items": [
         {
           "title": "Personas",
@@ -294,7 +294,7 @@
         "id": "planes-emergencia",
         "tag": "Emergencias",
         "title": "Planes de Emergencia y GRD",
-        "summary": "Preparación práctica para anticipar amenazas y responder de manera coordinada ante situaciones críticas.",
+        "summary": "Preparación práctica para anticipar amenazas y responder de manera coordinada, ante situaciones críticas.",
         "description": "Diseñamos y actualizamos planes de emergencia y herramientas de Gestión del Riesgo de Desastres (GRD), ajustados a las amenazas, instalaciones y personas de cada organización o comunidad.",
         "scope": [
           "Identificación de amenazas y escenarios",
@@ -313,7 +313,7 @@
         "id": "sistemas-contra-incendios",
         "tag": "Incendios",
         "title": "Mantenimiento de Sistemas Contra Incendios",
-        "summary": "Inspección y mantenimiento planificado para conservar operativos los sistemas de protección contra incendios.",
+        "summary": "Inspección y mantenimiento planificado, para conservar operativos los sistemas de protección contra incendios.",
         "description": "Coordinamos la revisión, el mantenimiento y la trazabilidad de los sistemas contra incendios, priorizando su disponibilidad, el registro de las intervenciones y la corrección oportuna de hallazgos.",
         "scope": [
           "Levantamiento e inventario de sistemas y equipos",
@@ -332,7 +332,7 @@
         "id": "capacitacion",
         "tag": "Cultura",
         "title": "Desarrollo de Cultura Preventiva",
-        "summary": "Transformar los hábitos y comportamientos organizacionales para que la seguridad, la legalidad y el bienestar operen de forma natural, logrando reducir costos por riesgos y convertir el cumplimiento en una ventaja competitiva y un motor de productividad.",
+        "summary": "Transformar los hábitos y comportamientos organizacionales para que la seguridad, la legalidad y el bienestar operen de forma natural, logrando reducir costos por riesgos, convertir el cumplimiento en una ventaja competitiva y un motor de productividad.",
         "description": "Diseñar, implementar y acompañar el desarrollo de una Cultura Organizacional, con el objeto de lograr que la Prevención deje de ser un reglamento colgado en la pared o un conjunto de normativas impuestas por obligación, y se convierta en un valor cultural compartido.",
         "scope": [
           "Acompañamiento para alinear el discurso corporativo con las prácticas cotidianas, modelando con el ejemplo.",
@@ -476,7 +476,7 @@
           "copy": "Conocemos la operación, sus personas, exigencias y puntos de tensión."
         },
         {
-          "title": "Priorizamos lo importante",
+          "title": "Identificamos brechas según riesgo",
           "copy": "Ordenamos brechas según riesgo, urgencia y capacidad real de implementación."
         },
         {
@@ -506,7 +506,7 @@
     "intro": {
       "eyebrow": "Abastecimiento corporativo",
       "title": "Productos de seguridad para operaciones que necesitan continuidad.",
-      "copy": "Disponemos de una línea de distribución de EPP y de otros elementos de prevención de accidentes y de riesgos. El objetivo es orientar a empresas que requieren cotizar, planificar compras o estandarizar sus elementos de protección personal."
+      "copy": "Disponemos de una línea de EPP y de otros elementos de prevención de accidentes y de riesgos. El objetivo es orientar a empresas que requieren cotizar, planificar compras o estandarizar sus elementos de protección personal."
     },
     "categories": [
       {
@@ -539,7 +539,7 @@
     "cta": {
       "eyebrow": "Solicitud empresarial",
       "title": "Conversemos sobre los EPP que necesita tu equipo.",
-      "intro": "Podemos apoyar compras puntuales, reposición periódica o levantamientos por área de trabajo.",
+      "intro": "Podemos apoyar compras, reposición periódica o levantamientos por área de trabajo.",
       "button": "Solicitar cotización B2B"
     }
   },

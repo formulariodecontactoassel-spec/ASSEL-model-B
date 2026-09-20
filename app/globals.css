@@ -517,6 +517,7 @@ nav a.active::after {
 .about-section-heading > h2 { margin: 0; font-size: clamp(42px, 4.6vw, 68px); line-height: 1; letter-spacing: -.055em; }
 .about-section-heading > p:not(.eyebrow) { margin: 0; color: #637377; font-size: 14px; line-height: 1.75; }
 .about-method { padding: 72px max(48px, calc((100% - 1320px) / 2)); background: #e9eee8; }
+.about-method .about-section-heading .eyebrow { color: var(--ink); }
 .about-method-track { position: relative; margin-top: 42px; display: grid; grid-template-columns: repeat(4, 1fr); }
 .about-method-track::before { content: ''; position: absolute; top: 40px; left: 12.5%; right: 12.5%; height: 1px; background: #b9c4bc; }
 .about-method-track::after { content: ''; position: absolute; z-index: 0; top: 39px; left: 12.5%; right: 12.5%; height: 3px; background: linear-gradient(90deg, var(--green-deep) 0 36%, #e8ffb6 50%, var(--green) 64% 100%); background-size: 200% 100%; box-shadow: 0 0 16px rgba(112,184,44,.32); transform: scaleX(0); transform-origin: left; transition: transform 1.45s cubic-bezier(.22,.8,.32,1) .15s; }
@@ -583,7 +584,9 @@ nav a.active::after {
 .epp-category-card h2 { margin: 0 0 14px; font-size: clamp(30px, 3vw, 42px); line-height: 1; letter-spacing: -.045em; }
 .epp-category-card p { margin: 0; max-width: 440px; color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.58; }
 .epp-b2b-band { padding: 110px max(48px, calc((100% - 1320px) / 2)); display: grid; grid-template-columns: .82fr 1.18fr; gap: 90px; background: var(--green); }
-.epp-b2b-band h2 { margin: 0; max-width: 620px; font-size: clamp(42px, 4.8vw, 70px); line-height: .98; letter-spacing: -.06em; }
+.epp-b2b-band .eyebrow,
+.epp-b2b-band h2 { color: var(--ink); }
+.epp-b2b-band h2 { margin: 0; max-width: 620px; font-size: clamp(42px, 4.8vw, 70px); line-height: .98; letter-spacing: -.06em; text-shadow: 0 1px 0 rgba(255,255,255,.28); }
 .epp-b2b-list { display: grid; grid-template-columns: repeat(3, 1fr); border-left: 1px solid rgba(7,29,36,.2); }
 .epp-b2b-list article { min-height: 240px; padding: 24px 26px; display: flex; flex-direction: column; border-right: 1px solid rgba(7,29,36,.2); }
 .epp-b2b-list span { font-size: 12px; font-weight: 800; }
@@ -629,7 +632,7 @@ nav a.active::after {
 .service-plan-cta { min-height: 55px; margin-top: auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--green); color: var(--ink); font-size: 14px; font-weight: 800; letter-spacing: .02em; transition: background .2s ease, transform .2s ease; }
 .service-plan-cta span { font-size: 19px; }
 .service-plan-cta:hover { background: var(--ink); color: white; transform: translateY(-2px); }
-.service-plans-note { margin: 22px auto 0; max-width: 760px; color: rgba(255,255,255,.48); font-size: 13px; line-height: 1.55; text-align: center; }
+.service-plans-note { margin: 22px auto 0; max-width: 760px; color: white; font-size: 13px; line-height: 1.55; text-align: center; }
 .method-section { padding: 74px max(48px, calc((100% - 1320px) / 2)); display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; background: white; }
 .method-section h2 { margin: 0; font-size: clamp(42px, 4.2vw, 64px); line-height: 1; letter-spacing: -.055em; }
 .method-steps { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #dbe2dd; border-left: 1px solid #dbe2dd; }
