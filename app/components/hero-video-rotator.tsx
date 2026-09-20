@@ -3,8 +3,22 @@
 import { useEffect, useRef, useState } from 'react';
 
 const heroVideos = [
-  { src: '/videos/hero-santiago.mp4', className: 'is-santiago', label: 'Santiago' },
-  { src: '/videos/hero-red-incendio.mp4', className: 'is-red-incendio', label: 'Red contra incendio' },
+  {
+    sources: [
+      { src: '/videos/hero-santiago-optimized.mp4', type: 'video/mp4' },
+      { src: '/videos/hero-santiago-optimized.webm', type: 'video/webm' },
+    ],
+    className: 'is-santiago',
+    label: 'Santiago',
+  },
+  {
+    sources: [
+      { src: '/videos/hero-red-incendio-optimized.webm', type: 'video/webm' },
+      { src: '/videos/hero-red-incendio-optimized.mp4', type: 'video/mp4' },
+    ],
+    className: 'is-red-incendio',
+    label: 'Red contra incendio',
+  },
 ];
 
 export function HeroVideoRotator() {
@@ -46,7 +60,7 @@ export function HeroVideoRotator() {
         {heroVideos.map((video, index) => (
           <video
             className={`hero-video ${video.className} ${index === activeVideo ? 'is-active' : ''}`}
-            key={video.src}
+            key={video.label}
             ref={(element) => { videoRefs.current[index] = element; }}
             autoPlay={index === 0}
             muted
@@ -54,7 +68,7 @@ export function HeroVideoRotator() {
             preload={index === 0 || preloadSecondaryVideos ? 'auto' : 'none'}
             onEnded={index === activeVideo ? showNextVideo : undefined}
           >
-            <source src={video.src} type="video/mp4" />
+            {video.sources.map((source) => <source src={source.src} type={source.type} key={source.src} />)}
           </video>
         ))}
       </div>
@@ -64,7 +78,7 @@ export function HeroVideoRotator() {
           {heroVideos.map((video, index) => (
             <button
               className={index === activeVideo ? 'is-active' : ''}
-              key={video.src}
+              key={video.label}
               type="button"
               aria-label={`Mostrar video: ${video.label}`}
               aria-pressed={index === activeVideo}
