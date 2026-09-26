@@ -311,7 +311,8 @@ nav a.active::after {
   font-size: 13px;
   color: var(--ink);
 }
-.whatsapp-float span { width: 33px; height: 33px; display: grid; place-items: center; border-radius: 50%; background: #20c768; color: white; font-size: 12px; font-weight: 800; }
+.whatsapp-float span { width: 33px; height: 33px; display: grid; place-items: center; border-radius: 50%; background: #20c768; color: white; }
+.whatsapp-float span svg { width: 19px; height: 19px; fill: currentColor; }
 
 @media (max-width: 1100px) {
   nav { display: none; }
