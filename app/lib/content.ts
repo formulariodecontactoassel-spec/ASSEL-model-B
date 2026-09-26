@@ -11,6 +11,7 @@ export type Service = {
   audience: string;
   tag: string;
   image: string;
+  modalImage?: string;
 };
 
 export type CaseStudy = {
@@ -39,11 +40,15 @@ export const siteContent = siteContentJson as EditableSiteContent;
 const serviceImages: Record<string, string> = {
   'planes-emergencia': '/images/servicio-emergencias.jpg',
   'sistemas-contra-incendios': 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=82',
-  capacitacion: '/images/capacitacion-cultura.jpg',
+  capacitacion: '/images/capacitacion-cultura-limpia.jpg',
   'implementacion-ds44': '/images/assel-inspeccion-prevencion.webp',
   'resoluciones-sanitarias': '/images/servicio-tramites.jpg',
   'ley-karin': '/images/servicio-ley-karin.jpg',
   'organismos-administradores': 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=82',
+};
+
+const serviceModalImages: Record<string, string> = {
+  capacitacion: '/images/capacitacion-cultura-limpia.jpg',
 };
 
 const caseImages: Record<string, { image: string; gallery: string[] }> = {
@@ -74,6 +79,7 @@ export const defaultServices: Service[] = siteContent.services.items.map((servic
   ...service,
   number: String(index + 1).padStart(2, '0'),
   image: serviceImages[service.id],
+  modalImage: serviceModalImages[service.id],
 }));
 
 export const defaultCases: CaseStudy[] = siteContent.cases.items.map((item) => ({
